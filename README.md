@@ -294,7 +294,6 @@ jupyter notebook
 
 <div align="center">
 
-### Built during the CodSoft Machine Learning Internship
 
 *5 projects · 5 real-world ML problems · End-to-end implementations*
 
