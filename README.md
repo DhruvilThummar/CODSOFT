@@ -84,6 +84,14 @@
 
 **📁 Files:** [`task 2/credit_card_fraud_detection.ipynb`](task%202/credit_card_fraud_detection.ipynb) · [`task 2/train_and_evaluate.py`](task%202/train_and_evaluate.py)
 
+> **📥 Dataset Note:** `creditcard.csv` (143 MB) is **not included** in this repo due to GitHub's 100 MB file limit.
+> Download it automatically by running:
+> ```bash
+> cd "task 2"
+> python download_data.py
+> ```
+> Or download manually from [Kaggle — Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place `creditcard.csv` inside `task 2/Credit_Card_Fraud_Dataset/`.
+
 ---
 
 ## 📉 Task 3 — Customer Churn Prediction
@@ -212,6 +220,7 @@ CODSOFT/
 ├── task 2/                              # Credit Card Fraud Detection
 │   ├── credit_card_fraud_detection.ipynb
 │   ├── train_and_evaluate.py
+│   ├── download_data.py                 ← Run this to fetch creditcard.csv
 │   ├── metrics.txt
 │   ├── requirements.txt
 │   └── plots/
@@ -219,6 +228,7 @@ CODSOFT/
 │       ├── pr_curves_validation.png
 │       ├── class_distribution.png
 │       └── confusion_matrix_*.png
+│   # ⚠️  creditcard.csv (143 MB) is NOT committed — run download_data.py
 │
 ├── task 3/                              # Customer Churn Prediction
 │   ├── customer_churn_prediction.ipynb
