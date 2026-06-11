@@ -1,0 +1,19 @@
+# Large datasets - too big for GitHub (>100MB)
+creditcard.csv
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
