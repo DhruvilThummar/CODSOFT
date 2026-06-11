@@ -1,0 +1,10 @@
+pandas
+numpy
+torch
+matplotlib
+seaborn
+tqdm
+notebook
+ipykernel
+pillow
+urllib3

@@ -1,0 +1,54 @@
+=== Validation Set Performance Comparison ===
+                                 Accuracy Precision    Recall  F1-Score   ROC-AUC    PR-AUC
+Naive Baseline                   0.874153       0.0       0.0       0.0       0.5  0.125847
+Naive Bayes (MultinomialNB)      0.957406       1.0  0.661538  0.796296  0.969716  0.935915
+Logistic Regression (Base)       0.961278       1.0  0.692308  0.818182  0.985459  0.961282
+Logistic Regression (Balanced)   0.976767  0.884058  0.938462  0.910448  0.986029   0.96348
+Support Vector Machine (Linear)  0.981607  0.974359  0.876923  0.923077  0.985774  0.962684
+
+=== Test Set Performance of Selected Models ===
+
+Naive Bayes Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       903
+           1       1.00      0.72      0.84       131
+
+    accuracy                           0.96      1034
+   macro avg       0.98      0.86      0.91      1034
+weighted avg       0.97      0.96      0.96      1034
+ROC-AUC: 0.9858
+PR-AUC: 0.9637
+----------------------------------------
+
+Logistic Regression Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.99       903
+           1       0.89      0.92      0.91       131
+
+    accuracy                           0.98      1034
+   macro avg       0.94      0.95      0.95      1034
+weighted avg       0.98      0.98      0.98      1034
+ROC-AUC: 0.9896
+PR-AUC: 0.9604
+----------------------------------------
+
+SVM (Linear) Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       903
+           1       0.99      0.90      0.94       131
+
+    accuracy                           0.99      1034
+   macro avg       0.99      0.95      0.97      1034
+weighted avg       0.99      0.99      0.99      1034
+ROC-AUC: 0.9926
+PR-AUC: 0.9754
+----------------------------------------
+
+=== Summary Test Metrics ===
+                     Accuracy  Precision  Recall  F1-Score  ROC-AUC  PR-AUC
+Naive Bayes            0.9642     1.0000  0.7176    0.8356   0.9858  0.9637
+Logistic Regression    0.9758     0.8897  0.9237    0.9064   0.9896  0.9604
+SVM (Linear)           0.9865     0.9916  0.9008    0.9440   0.9926  0.9754

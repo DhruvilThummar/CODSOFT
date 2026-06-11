@@ -1,0 +1,58 @@
+=== Validation Set Performance Comparison ===
+                                Accuracy Precision    Recall  F1-Score   ROC-AUC PR-AUC (AP)
+Logistic Regression (Balanced)  0.973531  0.053866  0.904255  0.101675  0.978963    0.785968
+Logistic Regression (RUS)       0.946445  0.027591  0.914894  0.053566  0.974438    0.489572
+Logistic Regression (SMOTE)     0.971504  0.050207  0.904255  0.095132  0.977412    0.788098
+Decision Tree (Balanced)        0.976544  0.059159  0.882979  0.110888   0.93215    0.457205
+Decision Tree (RUS)             0.927888  0.020393  0.904255  0.039887  0.904685    0.018604
+Decision Tree (SMOTE)           0.952701  0.030457  0.893617  0.058906  0.924988    0.608704
+Random Forest (Balanced)        0.999577  0.888889  0.851064  0.869565  0.969963    0.837923
+Random Forest (RUS)             0.973689  0.053606  0.893617  0.101144  0.970674    0.771343
+Random Forest (SMOTE)           0.998784  0.588652  0.882979  0.706383  0.976194    0.858638
+
+=== Test Set Performance of SMOTE Models ===
+
+Logistic Regression (SMOTE) Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98     56651
+           1       0.05      0.87      0.09        95
+
+    accuracy                           0.97     56746
+   macro avg       0.52      0.92      0.54     56746
+weighted avg       1.00      0.97      0.98     56746
+ROC-AUC: 0.9582
+PR-AUC (AP): 0.6879
+----------------------------------------
+
+Decision Tree (SMOTE) Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98     56651
+           1       0.03      0.85      0.06        95
+
+    accuracy                           0.95     56746
+   macro avg       0.52      0.90      0.52     56746
+weighted avg       1.00      0.95      0.98     56746
+ROC-AUC: 0.9328
+PR-AUC (AP): 0.5079
+----------------------------------------
+
+Random Forest (SMOTE) Test Set Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     56651
+           1       0.57      0.79      0.66        95
+
+    accuracy                           1.00     56746
+   macro avg       0.78      0.89      0.83     56746
+weighted avg       1.00      1.00      1.00     56746
+ROC-AUC: 0.9748
+PR-AUC (AP): 0.7716
+----------------------------------------
+
+=== Summary Test Metrics ===
+                             Accuracy  Precision    Recall  F1-Score   ROC-AUC  PR-AUC (AP)
+Logistic Regression (SMOTE)  0.970430   0.047456  0.873684  0.090022  0.958250     0.687869
+Decision Tree (SMOTE)        0.954992   0.030904  0.852632  0.059647  0.932799     0.507924
+Random Forest (SMOTE)        0.998643   0.568182  0.789474  0.660793  0.974808     0.771620
