@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 CodSoft Machine Learning Internship
+# 🤖 Machine Learning
 
 ### A portfolio of 5 end-to-end Machine Learning projects — built from scratch with real data, real models, and real results.
 
